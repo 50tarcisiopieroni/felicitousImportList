@@ -18,7 +18,7 @@ async function main() {
     const convites = [];
     let cnvd_atual = null;
 
-    fs.createReadStream('input/lista.csv')
+    fs.createReadStream('input/listaAcessoVip.csv')
         .pipe(csv({
             headers: COLUNAS_ACESSORIA_VIP_CSV,
             skipLines: 1
